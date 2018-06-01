@@ -24,6 +24,16 @@
            <result name="success" type="redirect">/userinfo2</result>
            <result name="error">/WEB-INF/pages/Login.jsp</result>
        </action>
+       
+       <action name="edit" class="edu.framgia.struts2.action.EditAction" method="input">
+       	<result name="input">/WEB-INF/pages/edit.jsp</result>
+       </action>
+       
+       <action name="save" class="edu.framgia.struts2.action.EditAction" method="execute">
+      <result name="input">/WEB-INF/pages/edit.jsp</result>
+      <result name="success">/WEB-INF/pages/thanks.jsp</result>
+    </action>
+       
    </package>  
      
 </struts>
